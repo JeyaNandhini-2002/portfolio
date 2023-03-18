@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+  header{
+    font-family: 'Poppins',sans-serif;
+    display:flex;
+    align-items: left;
+    font-size:15px;
+    
+  }
+  .d {
+    margin:auto;
+    text-align: center;
+    font-size: xx-large;
+    width: 95%;
+    padding: 10px;
+  }
+  
+  .d1 {
+    margin:auto;
+    width: 95%;
+    border-top: 2px solid violet;
+    border-left: 2px solid violet;
+    border-right: 2px solid violet;
+    padding: 25px;
+  }
+  #idc,#idp,#ido,#contact {
+    margin:auto;
+    width: 95%;
+    border:8px solid violet;
+    padding: 25px;
+  }
+  .d2 {
+    margin:auto;
+    width: 45%;
+    padding: 5px;
+  }
+  article {
+    float: left;
+    padding: 120px;
+    width: 20%;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-container > div:hover{
+    width:135px;
+    color:black;
+    text-decoration:underline ;
+  }
+  .flex-container > div {
+    background-color: violet;
+    width: 130px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+
+  }
+  .flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .flex-container1 > div {
+    background-color: violet;
+    width: 130px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+  }
+  .flex-container1 > div:hover{
+    width:135px;
+
+  }
+  p{
+    color:white
+  }
+  li{
+    list-style: none;
+  }
+  #contact{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #contact >div{
+    background-color: black;
+    width: 100%;
+    margin: 10px;
+  }
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    header, article,#c1,#c2,#c3,#c4,.df,#contact {
+      width: 100%;
+      height: auto;
+    }
+  }
