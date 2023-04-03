@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;;
+
+  }
+ 
+  .glow {
+    display:flex;
+    flex-wrap:nowrap;
+    font-size: 30px;
+    color: #fff;
+    text-align: auto;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  .glow1 {
+    display:flex;
+    flex-wrap:nowrap;
+    font-size: 15px;
+    color: #fff;
+    text-align: auto;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  header{
+    font-family: 'Poppins',sans-serif;
+    display:flex;
+    align-items: left;
+    font-size:15px;
+    
+  }
+  .d {
+    margin:auto;
+    text-align: center;
+    font-size: xx-large;
+    width: 95%;
+    padding: 10px;
+  }
+  
+  .d1 {
+    margin:auto;
+    width: 95%;
+    border-top: 2px solid violet;
+    border-left: 2px solid violet;
+    border-right: 2px solid violet;
+    padding: 25px;
+  }
+  #idp,#ido,#contact {
+    margin:auto;
+    width: 95%;
+    border:4px solid violet;
+    padding: 25px;
+    
+  }
+  .flashit{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#f2f;
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 2s infinite;
+  }
+  @-webkit-keyframes flash {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+  }
+  @keyframes flash {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+  }
+  #idc{
+    display: flex;
+  flex-wrap:nowrap;
+   margin:auto;
+    
+place-items: center;
+  color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  
+  position: relative;
+  width: 95%;
+  background-color: black;
+  
+  }
+  #idc::before,
+#idc::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background: linear-gradient(45deg,red,blue,green,yellow,#e11d74,black,#ffff00,#aa0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 25s linear infinite;
+}
+
+#idc::after {
+  filter: blur(5px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+  
+
+
+  .d2 {
+    margin:auto;
+    width: 45%;
+    padding: 5px;
+  }
+  article {
+    float: left;
+    padding: 120px;
+    width: 20%;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-container > div:hover{
+    width:135px;
+    color:black;
+    text-decoration:underline ;
+  }
+  .flex-container > div {
+    background-color: violet;
+    width: 130px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+
+  }
+  .flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .flex-container1 > div {
+    background-color: violet;
+    width: 130px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+  }
+  .flex-container1 > div:hover{
+    width:135px;
+
+  }
+  p{
+    color:white
+  }
+  li{
+    list-style: none;
+  }
+  #contact{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #contact >div{
+    background-color: black;
+    width: 100%;
+    margin: 10px;
+  }
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    header, article,#c1,#c2,#c3,#c4,.df,#contact {
+      width: 100%;
+      height: auto;
+    }
+  }
